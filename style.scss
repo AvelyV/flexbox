@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 2px solid orange;
+    height: 300px;
+
+    div {
+        flex: 1;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+        background-color: teal;
+        font-family: Arial, Helvetica, sans-serif;  
+    }
+
+    div:nth-child(2) {
+        background-color: orange;
+        flex: 2;
+        order: -1; //moves it to start of list
+        // align-self: flex-end;
+    }
+
+    div:nth-child(4) {
+        margin-left: auto;
+    }
+}
+
+
+
+
